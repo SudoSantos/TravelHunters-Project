@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway", sans-serif;
+    color: #333;
+    font-size: 16px;
+}
+
+html{
+    background-color:rgba(244, 244, 244, 1);
+}
+
+.navbar {
+    background-color: white;
+    color: #263238;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 6px rgba(0, 0, 0, 1.0);
+    padding: 10px 20px;
+    height: 90px;
+    z-index: 1;
+
+  }
+  
+.navbar-logo a img {
+    width: 300px; 
+    height: 50px;
+  }
+  
+.navbar-links {
+    display: flex;
+  }
+
+.navbar-links select{
+    border: none;
+    background-color:#6E9E76;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 800;
+  }
+  
+.prev a{
+    font-weight: bold;
+  }
+
+.navbar-links a {
+    color:  #263238;
+    text-decoration: none;
+    margin-right: 20px;
+    transition: 0.2s ease-in-out;
+  }
+
+.navbar-links a:hover{
+    color: red;
+    /* text-decoration: underline;git  */
+  }
+
+.navbar-links:last-child a:nth-child(1){
+    color: #fff;
+    background-color:#6E9E76;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+.navbar-links:last-child a:nth-child(4){
+  border: 1px solid #f15156;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.background {
+  width: 100vw; /* Width of the viewport */
+  height: 70vh; /* 70% of the viewport height */
+  background-image: url('images/Rectangle.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; /* Prevents the background image from repeating */
+  /* display: none; */
+}
+
+.background .search-bar{
+  position: absolute;
+  top: 250px;
+  left: 200px;
+  width: 930px;
+  height: 62px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.search-bar input{
+  height: 40px;
+  border: 1.5px solid #6E9E76;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.search-bar input::placeholder{
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.search-bar input:nth-child(1){
+  width: 230px;
+}
+
+.search-bar input:nth-child(2){
+  width: 168px;
+}
+
+.search-bar input:nth-child(3){
+  width: 180px;
+}
+
+.search-bar input:nth-child(4){
+  width: 187px;
+}
+
+.search-bar button{
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #6E9E76;
+  color: white;
+  border: none;
+}
+
+section.mid{
+  width: 90vw;
+  /* height: 500px; */
+  margin: 0 auto;
+  /* background-color: teal; */
+}
+
+section.mid p.header-txt{
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+div.cover{
+  position: relative;
+  /* width: 70%; */
+  height: 250px;
+  margin: 20px auto;
+  /* background-color: rgba(110, 158, 118, 0.14); */
+  border-radius: 30px;
+  /* display: none; */
+}
+
+div.holder{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  background: none;
+  /* background-color: black; */
+}
+
+.holder .card{
+  width: 220px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /* background-color: rgb(232, 212, 212); */
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 10px 10px;
+  transition: 0.3s ease-in-out;
+}
+
+.holder .card:hover{
+  cursor: pointer;
+  transform: translateY(-10px);
+  
+}
+
+.holder .card img{
+  width: calc(100% - 10%);
+  margin: 10px auto;
+}
+
+.holder .card p{
+  font-weight: 600;
+}
+
+.holder .card div.prices{
+  display: flex;
+  flex-direction: column;
+}
+
+.holder .card div.prices span.old-p{
+  font-size: 0.7em;
+  text-decoration: line-through;
+  margin: 5px 0;
+  color: red;
+}
+
+.holder .card div.prices span.new-p{
+  font-size: 0.9em;
+}
+
+section.offers{
+  width: 90vw;
+  /* height: 500px; */
+  margin: 0 auto;
+  /* background-color: teal; */
+}
+
+
+section.offers p.desc{
+  font-size: 1.5em;
+  font-weight: 600;
+  font-family: "Raleway";
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+div.cover2{
+  position: relative;
+  /* width: 70%; */
+  height: 250px;
+  margin: 20px auto;
+  /* background-color: rgba(110, 158, 118, 0.14); */
+  border-radius: 30px;
+  /* display: none; */
+}
+
+div.holder2{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: fit-content;
+  margin: auto;
+  background: none;
+  /* background-color: black; */
+}
+
+.holder2 .card2{
+  width: 220px;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  /* background-color: rgb(232, 212, 212); */
+  background-color: white;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  margin: 10px 10px;
+}
+
+.holder2 .card2 img{
+  width: calc(100% - 10%);
+  margin: 10px auto;
+}
+
+.holder2 .card2 p{
+  font-weight: 600;
+}
+
+
