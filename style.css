@@ -72,13 +72,12 @@ html{
 }
 
 .background {
-  width: 100vw; /* Width of the viewport */
-  height: 70vh; /* 70% of the viewport height */
+  width: 100vw; 
+  height: 70vh; 
   background-image: url('images/Rectangle.jpg');
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; /* Prevents the background image from repeating */
-  /* display: none; */
+  background-repeat: no-repeat;
 }
 
 .background .search-bar{
@@ -145,9 +144,8 @@ html{
 
 section.mid{
   width: 90vw;
-  /* height: 500px; */
   margin: 0 auto;
-  /* background-color: teal; */
+  position: relative;
 }
 
 section.mid p.header-txt{
@@ -159,13 +157,10 @@ section.mid p.header-txt{
 }
 
 section.mid div.cover{
-  position: relative;
-  /* border: 1px solid black; */
-  /* width: 70%; */
   height: 250px;
   margin: 20px auto;
-  /* background-color: rgba(110, 158, 118, 0.14); */
   border-radius: 30px;
+  z-index: 3;
 }
 
 div.holder{
@@ -175,7 +170,27 @@ div.holder{
   width: fit-content;
   margin: auto;
   background: none;
-  /* background-color: black; */
+}
+
+section.mid div.backg{
+  width: 70%;
+  height: 250px;
+  background-color:  rgba(110, 158, 118, 0.14);
+  position: absolute;
+  top: 45px;
+  left: 185px;
+  z-index: -1;
+  border-radius: 30px;
+}
+
+section.mid div.backg2{
+  width: 70%;
+  height: 250px;
+  background-color:#fde5e6;
+  position: absolute;
+  top: 45px; left: 185px;
+  z-index: -1;
+  border-radius: 30px;
 }
 
 .holder .card{
@@ -185,7 +200,6 @@ div.holder{
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  /* background-color: rgb(232, 212, 212); */
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 5px;
@@ -228,6 +242,7 @@ div.holder{
 
 
 section.offers{
+  position: relative;
   width: 90vw;
   margin: 0 auto;
 }
@@ -243,12 +258,9 @@ section.offers p.desc{
 
 div.cover2{
   position: relative;
-  /* width: 70%; */
   height: 250px;
   margin: 20px auto;
-  /* background-color: rgba(110, 158, 118, 0.14); */
   border-radius: 30px;
-  /* display: none; */
 }
 
 div.holder2{
@@ -258,7 +270,17 @@ div.holder2{
   width: fit-content;
   margin: auto;
   background: none;
-  /* background-color: black; */
+}
+
+section.offers div.backg{
+  width: 70%;
+  height: 250px;
+  background-color:  rgba(110, 158, 118, 0.14);
+  position: absolute;
+  top: 40px;
+  left: 185px;
+  z-index: -1;
+  border-radius: 30px;
 }
 
 .holder2 .card2{
@@ -268,7 +290,6 @@ div.holder2{
   flex-direction: column;
   align-items: center;
   border-radius: 10px;
-  /* background-color: rgb(232, 212, 212); */
   background-color: white;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
   padding: 5px;
@@ -291,15 +312,10 @@ div.holder2{
   font-weight: 600;
 }
 
-
-
-
-
-
 section.hotels{
   width: 90vw;
-  /* height: 500px; */
-  margin: 0 auto;
+  margin: 10px auto;
+  position: relative;
 }
 
 
@@ -307,68 +323,66 @@ section.hotels p.descr{
   font-size: 1.5em;
   font-weight: 600;
   font-family: "Raleway";
-  margin-top: 20px;
+  margin: 20px auto;
   margin-left: 100px;
-}
-
-div.cover3 {
-  position: relative;
-  /* width: 70%; */
-  height: 250px;
-  margin: 20px 0;
-  border-radius: 30px;
-  /* display: none; */
 }
 
 div.holder3 {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   width: fit-content;
   margin: auto;
-  background: none;
-  /* max-width: 70%; */
-  /* background-color: black; */
+  background: 2px solid black;
 }
 
-
-.holder3 .card3 {
-  /* width: 200px; */
-  /* height: fit-content; */
+.holder3 .child{
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 10px;
-  /* background-color: white; */
-  background: none;
-  /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-  /* padding: 5px; */
-  /* overflow: hidden; */
-  /* margin: auto; */
 }
 
-.holder3 .card3 img {
-  width: calc(100% - 20%);
-  margin: 10px auto;
+.holder3 .child img{
+  width: 216px;
+  height: 209px;
+  margin: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
   border-radius: 10px;
+  transition: 0.3s ease-in-out;
 }
-.holder3 .card3 p{
+
+.holder3 .child img:hover{
+  transform: scale(1.1);
+}
+
+.holder3 .child p{
   display: inline-block;
   padding: 5px 30px;
   background-color: #ffffff; 
   color: black;
   text-align: center;
-  /* text-decoration: none; */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
   transform: translateY(-20px);
+  transition: 0.3s ease-in-out;
 }
 
+.holder3 .child p:hover{
+  text-decoration: underline;
+  color: #FF3C42;
+}
 
-
+section.hotels div.backg2{
+  width: 70%;
+  height: 250px;
+  background-color:#fde5e6;
+  position: absolute;
+  top: 45px;
+  left: 185px;
+  z-index: -1;
+  border-radius: 30px;
+}
 
 section.bottom{
   height: fit-content;
@@ -378,14 +392,13 @@ section.bottom{
 }
 
 section.bottom div.cont-holder{
-  width: 80%;
-  /* border: 1px solid black; */
+  width: 70%;
   margin: 30px auto;
   padding-top: 5px;
 }
 
 section.bottom div.cont{
-  margin:0 100px;
+  margin:0 90px;
 }
 
 
@@ -410,9 +423,7 @@ div.cont-holder div.cont:nth-child(2){
 section.foot{
   width: 100vw;
   height: fit-content;
-  /* height: 354px; */
   background-color: #ececec;
-  /* padding: 30px auto; */
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -424,7 +435,6 @@ section.foot div.something{
   display: flex;
   flex-direction: row;
   padding: 10px;
-  /* border: 1px solid black; */
 }
 
 section.foot div.f-cont{
@@ -458,7 +468,6 @@ section.foot div.last{
   max-width: 325px;
   flex-direction: column;
   padding-bottom: 50px;
-  /* padding-left: 100px; */
 }
 
 section.foot div.last p{
@@ -472,14 +481,11 @@ div.last div.in-last{
   flex-direction: row;
   justify-content: center;
   margin: 10px auto;
-  /* width: 90%; */
 }
 
 div.last div.in-last input,
 div.last div.in-last button{
   height: 35px;
-  /* padding: 10px; */
-  /* margin: 0; */
 }
 
 div.last div.in-last input{
@@ -509,7 +515,6 @@ div.last div.in-last button:hover{
 }
 
 section.foot div.last p:nth-of-type(2){
-  /* display: none; */
   font-size: 0.8em;
   color: #263238;
   font-weight: lighter;
@@ -524,7 +529,6 @@ footer{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* box-shadow: 0px 10px 6px rgba(0, 0, 0, 1.0); */
   padding: 10px 50px;
   height: fit-content;
 }
