@@ -36,27 +36,94 @@
 
     <section class="booking">
         <div class="main">
-            <input type="radio" id="rad">
-            <label for="rad">I'm booking for someone else</label>
+            <div class="someone">
+                <input type="radio" id="rad">
+                <label for="rad">I'm booking for someone else</label>
+            </div>
+            
 
             <p class="info">Guest Information</p>
-            <div class="names" style="display: flex; flex-direction: row;">
+
+            <div class="names">
                 <div style="display: flex; flex-direction: column;">
                     <label for="firstname">First name</label>
                     <input type="text" id="firstname">
                 </div>
                 <div style="display: flex; flex-direction: column;">
-                    <label for="lastname">Last name</label>
+                    <label for="lastname">Last name/<span>surname</span> </label>
                     <input type="text" id="lastname">
                 </div>
-                
-                
+
             </div>
-            
+
+            <div class="email">
+                <label for="email">Email address</label>
+                <input type="email" id="email">
+            </div>
+
+            <div class="names">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="c-code">Country code</label>
+                    <input type="number" id="c-code" placeholder="Nigeria(+234)">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="tel-no">Telephone number</label>
+                    <input type="number" id="tel-no" placeholder="080....">
+                </div>
+            </div>  
+
+            <div class="names">
+                <div style="display: flex; flex-direction: column;">
+                    <label for="c-code2">Country code</label>
+                    <input type="number" id="c-code2" placeholder="Ghana(+233)">
+                </div>
+                <div style="display: flex; flex-direction: column;">
+                    <label for="wap-no">Whatsapp number</label>
+                    <input type="number" id="wap-no" placeholder="024....">
+                </div>
+            </div>
+             
         </div>
 
         <div class="main">
-            <h1>Be seeing you</h1>
+           <img src="images/booking.png" alt="">
+
+           <div class="arrange">
+                    <p class="tranC">Transcorp Hilton</p>
+                    <p class="addr">2, Aminu Kano Crescent, Wuse II, Abuja</p>
+                    <p class="type">Room Type: Classic Room</p>
+                    <p class="type">Bed Type: Double Bed</p>
+
+                    <div class="rooms">
+                        <p>No. of Rooms:1</p>
+                        <p>Accommodates:2</p>
+                    </div>
+
+                    <div class="line"></div>
+
+                    <div class="check">
+                        <p>Check-In</p>
+                        <p>Check-Out</p>
+                    </div>
+
+                    <div class="check">
+                        <p>Tue, April 10</p>
+                        <p>Tue, April 15</p>
+                    </div> 
+
+                    <div class="check">
+                        <p>14:00/2:00 PM</p>
+                        <p>11:59/11:29 PM</p>
+                    </div> 
+
+                    <div class="line"></div>
+
+                    <span>Total Price(Incl. of tax)N5,200</span>
+              </div>
+
+              
+           </div>
+           
         </div>
     </section>
     
