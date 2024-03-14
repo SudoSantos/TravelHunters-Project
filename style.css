@@ -822,3 +822,62 @@ main{
 .main-child span{
   margin: 3px 0;
 }
+
+
+/* HOTEL DETAILS PAGE STYLING */
+.hsearch-bar{
+  position: absolute;
+  top: 120px;
+  left: 200px;
+  width: 930px;
+  height: 62px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 30px;
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.7);
+}
+
+.hsearch-bar input{
+  height: 40px;
+  border: 1.5px solid #6E9E76;
+  border-radius: 7px;
+  text-align: center;
+}
+
+.hsearch-bar input::placeholder{
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.hsearch-bar input:nth-child(1){
+  width: 230px;
+}
+
+.hsearch-bar input:nth-child(2){
+  width: 168px;
+}
+
+.hsearch-bar input:nth-child(3){
+  width: 180px;
+}
+
+.hsearch-bar input:nth-child(4){
+  width: 187px;
+}
+
+.hsearch-bar button{
+  width: 80px;
+  height: 40px;
+  border-radius: 7px;
+  background-color: #6E9E76;
+  color: white;
+  border: none;
+  transition: 0.2s ease-in;
+}
+
+.hsearch-bar button:hover{
+  background-color: #3ca64e;
+  cursor: pointer;
+}
