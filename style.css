@@ -1201,3 +1201,168 @@ div.hf-line{
   text-align: center;
 }
 
+.location{
+  background-color: #F7F7F8;
+  border-radius: 30px;
+  padding-top: 20px;
+  /* border: 2px dotted green;  just to see */
+  /* display: flex; */
+  /* text-align: center; */
+}
+
+.location h1{
+  font-size: 1.4em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.location .locate{
+  border: 1px solid #ABAAAA94;
+  padding: 20px 30px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+}
+
+
+.locate div{
+  border: 1px solid #ABAAAA94;
+  border-radius: 10px;
+  /* display: none; */
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+
+.locate div img{
+  /* display: none; */
+  width: 100%;
+  height: 300px;
+}
+
+.locate div p{
+  font-size: 0.8em;
+  margin: 5px 0 5px 15px;
+}
+
+.locate div p a{
+  font-size: 0.9em;
+  color: #fa1018;
+}
+
+.location h2{
+  font-size: 1em;
+  font-weight: bold;
+  text-align: center;
+} 
+
+.location .locate div:last-of-type{
+  border: none;
+}
+
+.locate div:last-of-type div{
+  display: flex;
+  margin: 10px 0;
+  justify-content: space-between;
+}
+
+.locate div:last-of-type div ul li{
+  font-size: 0.8em;
+  margin: 3px;
+}
+
+.amenXfacils{
+  background-color: #F7F7F8;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+.amenXfacils h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+.amenXfacils .amenXfacil{
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid #ABAAAA94;
+  padding: 10px 20px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.amenXfacil .amenXfacil-c{
+  /* border: 1px dotted teal; */
+  text-align: center;
+  /* justify-content: center; */
+}
+
+.amenXfacil-c .amen{
+  /* display: none; */
+  /* border: 1px dotted red; */
+  margin: 20px 25px;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* text-align: center; */
+}
+
+.amen .iconXname{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.amen .iconXname img{
+  width: 25px;
+  height: 25px;
+  margin-right: 5px;
+}
+
+.amen .iconXname p{
+  font-weight: bold;
+}
+
+main.policies{
+  background-color: #F7F7F8;
+  padding-top: 20px;
+  border-radius: 30px;
+}
+
+main.policies h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+main.policies .policys{
+  border: 1px solid #ABAAAA94;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.policys .policy{
+  margin-bottom: 15px;
+}
+
+.policys .policy p{
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.policys .policy span{
+  font-weight: lighter;
+  /* margin-bottom: 5px; */
+}
+
+.policys .policy:last-of-type{
+  display: flex;
+  /* justify-content: space-evenly; */
+}
+
+.policys .policy:last-of-type div:nth-of-type(2){
+  margin-left: 70px;
+}
