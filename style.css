@@ -1358,11 +1358,43 @@ main.policies .policys{
   /* margin-bottom: 5px; */
 }
 
-.policys .policy:last-of-type{
+.policys .policy:nth-of-type(4){
   display: flex;
-  /* justify-content: space-evenly; */
+  /* display: none; */
 }
 
-.policys .policy:last-of-type div:nth-of-type(2){
+.policys .policy:nth-of-type(4) div:nth-of-type(2){
   margin-left: 70px;
+  /* display: none; */
+} 
+
+
+main.reviews{
+  background-color: #F7F7F8;
+  padding-top: 20px;
+  border-radius: 30px;
 }
+
+main.reviews h1{
+  text-align: center;
+  font-size: 1.4em;
+  margin-bottom: 15px;
+}
+
+main.reviews .review{
+  border: 1px solid #ABAAAA94;
+  /* display: flex; */
+  align-items: center;
+  padding: 20px;
+  height: fit-content;
+  border-radius: 10px;
+  background-color: white;
+}
+
+div.long-rev{
+  /* display: none; */
+  width: 250px;
+  height: 6px;
+  background-color: #E0E0E0;
+}
+
